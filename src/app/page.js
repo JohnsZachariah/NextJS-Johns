@@ -15,7 +15,13 @@ const page = () => {
   console.log(instaProfile)
 
 
-
+const instaPost=[
+    {profilephoto:"image_url", profilename:"ruff_and_puff"},
+    {postphoto:"post_url"},
+    {likes:"1,000,000",comments:"1000",shares:"1000"},
+    {caption:"Dog days are over, sweaters come to play,Leave fall, I trip, autumn's here to stay"},
+    {hastags:"#dog #sweaterweather #fallvibes #autumnleaves #cozyseason"}
+]
 
 
   const myObj = {
