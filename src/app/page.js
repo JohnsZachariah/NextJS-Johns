@@ -1,61 +1,45 @@
 import React from 'react'
+import Card from './components/Card'
 
 
 
 const page = () => {
 
 
-  const instaProfile={
-    name:"Matt Adlard",
-    post:"754",
-    followers:"1.1M",
-    following:"1021",
-    description:"Self taught pastry chef & best-selling author Order my new book below!"
+  const obj1 = { name: 'John', age: 19, rollno:38}
+
+  const YTVedio={
+    name: 'Gold Rush Vedio Song',
+    channel: 'Sony Music South',
+    views: 582000,
+    time: '1 day ago'
   }
-  console.log(instaProfile)
-
-
-const instaPost=[
-    {profilephoto:"image_url", profilename:"ruff_and_puff"},
-    {postphoto:"post_url"},
-    {likes:"1,000,000",comments:"1000",shares:"1000"},
-    {caption:"Dog days are over, sweaters come to play,Leave fall, I trip, autumn's here to stay"},
-    {hastags:"#dog #sweaterweather #fallvibes #autumnleaves #cozyseason"}
-]
-
-
-  const myObj = {
-    name:"Johns",
-    age:20,
-    city:"New York"
-  }
-
-  console.log(myObj)
-
-  const table = () => {
-    for(let i=0;i<=10;i++){
-      console.log(5,"x",i,"=",5*i)
-    }
-  }
-  table()
-
-  let name="Johns"
-
-  const Greet = (a) =>{
-    console.log("Hello my name is",a)
-  }
-
-  console.log(Greet(name))
-
-  const Add = (a,b) => {
-    return a + b                                                   
-  }
-  console.log("Addition Result:",Add(2,3))
 
   return (
-    <div>page</div>
+    <div>
+      <h1 className='text-8xl text-center text-teal-600'>Project</h1>
+      <p className='text-8xl text-center' >Name: {obj1.name}</p>
+      <p className='text-8xl text-center'>Age: {obj1.age}</p>
+      <p className='text-8xl text-center'>Roll No: {obj1.rollno}</p>
+
+      <Card data={YTVedio}/> 
+
+    </div>
   )
 }
 
 export default page
+
+
+
+
+
+
+
+
+
+
+
+
+
 
