@@ -7,7 +7,7 @@ const page = () => {
 
 
   
-  const YtVedio=[
+  const YtVideo=[
     {
     name: 'Gold Rush Vedio Song',
     channel: 'Sony Music South',
@@ -25,11 +25,11 @@ const page = () => {
 
   return(
       <div>
-        <Card data={ytvideo}/>
+        <Card data={YtVideo}/>
  
 <div>
   {
-    ytvideo.map((data)=>{
+    YtVideo.map((data)=>{
       return(
         <p key={data.id}>{data.Name}</p>
       )
