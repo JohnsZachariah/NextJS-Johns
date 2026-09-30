@@ -24,7 +24,7 @@ const page = () => {
 ]
 
   return(
- <div>
+      <div>
         <Card data={ytvideo}/>
  
 <div>
@@ -39,8 +39,7 @@ const page = () => {
   
 </div>
   )
-}
-
+} 
 
 
 export default page
