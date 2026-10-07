@@ -34,7 +34,7 @@ const page = () => {
     } catch (error) {
         console.log(error);
     } finally {
-        
+        setLoading(false);
     }
   };
 
@@ -46,13 +46,24 @@ useEffect(() => {
 }, [])
 
   
-
+console.log(weather)
 
 
   return (
+   
+    <div className="justify-center items-center flex flex-col gap-4">
+            
+       
+           <h1 className="text-4xl text-green-500">City Name: {weather?.name}</h1>
+           <div className="text-2xl">
+           <p>Latitude={weather?.coord?.lat}</p>
+           <p>Longitude={weather?.coord?.lon}</p>
 
-
-<div>Hi</div>
+           <p>Humidity:{weather?.main?.humidity}</p>
+           <p>Pressure:{weather?.main?.pressure}</p>
+            </div>
+    </div>
+ 
 
 
   )
